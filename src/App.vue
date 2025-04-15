@@ -268,8 +268,15 @@ body {
   padding: 0.3rem 0.6rem;
   border-radius: 4px;
   transition: background-color 0.3s;
+  color: var(--dark-text);
 }
 
+@media (max-width: 768px) {
+  .language-switcher button {
+    color: var(--dark-text);
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+}
 .language-switcher button.active {
   background-color: #eee;
   font-weight: bold;
